@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/styleMain.css">
+    <link rel="stylesheet" href="./css/font-awesome-4.7.0/css/font-awesome.min.css">
+    <title>Цу-е-фа</title>
+</head>
+
+<body class="body">
+    <div class="container center">
+        <div class="app">
+
+        </div>
+    </div>
+    <script src="./js/src/gameFinder.js"></script>
+    <script src="./js/pages/victory.js"></script>
+    <script src="./js/pages/loss.js"></script>
+    <script src="./js/pages/yourMove.js"></script>
+    <script src="./js/pages/oppenentMove.js"></script>
+    <script src="./js/pages/loading.js"></script>
+    <script src="./js/pages/lobby.js"></script>
+    <script src="./js/pages/login.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            window.gameFinder = gameFinder;
+            window.lossComponent = lossComponent;
+            window.victoryComponent = victoryComponent;
+            window.yourMoveComponent = yourMoveComponent;
+            window.opponentMoveComponent = opponentMoveComponent;
+            window.loadingComponent = loadingComponent;
+            window.lobbyComponent = lobbyComponent;
+            window.loginComponent = loginComponent;
+            loginComponent();
+        });
+    </script>
+</body>
+
+</html>
